@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      button {
+        background: none;
+        border: none;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+      }
+      .container {
+        direction: rtl;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      .emoji {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 5px;
+        font-size: 2rem;
+        filter: grayscale(100%);
+        width: 5rem;
+        cursor: pointer;
+        transition: filter 300ms ease, font-size 150ms ease-in-out;
+      }
+      .emoji:hover {
+        padding: 5px;
+        margin: 5px;
+        font-size: 2.5rem;
+        filter: grayscale(0%);
+      }
+      .emoji:focus {
+        font-size: 2.5rem;
+        filter: grayscale(0%);
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="emoji">😊</button>
+      <button class="emoji">😁</button>
+      <button class="emoji">😒</button>
+      <button class="emoji">😢</button>
+    </div>
+  </body>
+</html>
